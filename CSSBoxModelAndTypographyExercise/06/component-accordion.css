@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    font: 16px/1.5 Verdana, sans-serif;
+}
+
+body {
+    font: inherit;
+    padding: 2em;
+
+}
+.accordion{
+    margin: 1em auto;
+    max-width: 75em;
+}
+
+details {
+    border: solid 2px #eee;
+    border-bottom: none;
+}
+
+details > summary {
+    font-weight: bold;
+    padding: 1em;
+    
+}
+
+details p {
+    padding: 0em 1em 1em 1em;
+}
+
+details p:last-child {
+    padding-bottom: 2em;
+}
+.accordion .detail3{
+    border-bottom: 2px solid #eee;
+}
+

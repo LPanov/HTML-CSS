@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    font: 16px/1.5 awesome, sans-serif;
+}
+
+body {
+    font: inherit;
+    padding: 2.5em 2em;
+}
+
+p {
+    /* padding-bottom: 1em; */
+    /* padding-top: 1em; */
+    font-size: 1.5em;
+}
+
+.links a:nth-child(2) {
+    background-color: orange;
+}
+
+.links a:nth-child(3) {
+    background-color: #F9F9CC;
+}
+
+.links a:nth-child(4) {
+    background-color: white;
+}
+
+a {
+    font-size: 1.1em;
+    color: black;
+    background-color: #eee;
+    padding: 1em 1.3em;
+    border-radius: 10%;
+    border: 2px solid #eee;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+.links {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+button {
+    font-size: 1.1em;
+    padding: 1em 1.3em;
+    border: 2px solid #eee;
+    margin-right: 1em;
+    border-radius: 10%;
+}
+
+.buttons {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.buttons button:nth-child(2) {
+    background-color: orange;
+}
+
+.buttons button:nth-child(3) {
+    background-color: #F9F9CC;
+}
+
+.buttons button:nth-child(4) {
+    background-color: white;
+}

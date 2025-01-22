@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    font: 16px/1.5 awesome, sans-serif;
+}
+
+body {
+    font: inherit;
+    padding: 2em;
+
+}
+
+h2 {
+    padding-bottom: 1.5em;
+    font-size: 2.1em;
+}
+
+a i{
+    color: black;
+    transform: scale(1.7);
+
+}
+
+a {
+    background-color: #eee;
+    border-radius: 50%;
+    padding: 2em;
+    margin-right: 0.5em;
+}
+

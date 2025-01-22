@@ -1,0 +1,19 @@
+.blog {
+    border: solid 2px #eee;
+    border-radius: 0.4em;
+    margin: 1em auto;
+    max-width: 50em;
+    padding: 0 2em;
+}
+
+h1, h3{
+    padding: 1em 0;
+}
+
+p {
+    padding-bottom: 2em;
+}
+
+footer {
+    padding-bottom: 3em;
+}
