@@ -31,9 +31,20 @@ details {
 }
 
 details > summary {
+    list-style-type: '> ';
     font-weight: bold;
     padding: 1em;
     
+}
+
+details[open] > summary {
+    list-style-type: 'v ';
+}
+
+details > summary::marker {
+    font-family:  'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 details p {

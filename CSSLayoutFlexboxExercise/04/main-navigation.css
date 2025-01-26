@@ -1,0 +1,62 @@
+body {
+    background-color: #eee;
+}
+
+nav {
+    background: #aaa;
+    padding: 0.8em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+}
+
+nav ul li,
+nav ul li a {
+    display: block;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    padding:0.5em 0.8em;
+    background: white;
+    text-decoration: none;
+    color: orange;
+    border-radius: 0.3em;
+}
+
+nav ul ul {
+    display: none;
+}
+
+ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    background-color: #aaa;
+    padding: 0.5em;
+
+}
+
+nav ul li:hover > a,
+nav ul li a:hover {
+    color: blue;
+    background: black;
+}
+
+ul ul li:hover > ul {
+    top: 0;
+    left: 100%;
+}

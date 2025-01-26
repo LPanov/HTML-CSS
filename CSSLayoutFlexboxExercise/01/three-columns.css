@@ -1,0 +1,39 @@
+.container {
+    background: white;
+    padding: 2em;
+    margin: 0 auto;
+    max-width: 80vw;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    border-radius: 0.3em;
+}
+
+.container > header,
+.container > footer {
+    text-align: center;
+}
+
+.container > main {
+    display: flex;
+}
+
+main {
+    margin: 3em 0;
+    margin-left: 2em;
+    column-gap: 3em;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+header > p,
+footer> p {
+    color: #666;
+    max-width: 88ch;
+    margin: 0 auto;
+}
+
+header > p{
+    max-width: 50ch;
+}

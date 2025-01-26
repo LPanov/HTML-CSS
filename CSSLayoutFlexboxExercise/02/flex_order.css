@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.main, .sidebar {
+    background-color: white;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+.main > header, 
+.main > footer, 
+.sidebar > header,
+.sidebar > footer  {
+    border: 2px solid #999;
+    border-radius: 0.3em;
+    padding: 2em;
+}
+
+.mainSide, .sideMain {
+    display: flex;
+    gap: 1em
+}
+
+.mainSide > * {
+    border: 2px solid #999;
+    padding: 2em;
+    border-radius: 0.3em;
+}
+
+.mainSide > main {
+    flex-grow: 3;
+}
+
+.mainSide > aside {
+    flex-grow: 1;
+}
+
+.sideMain > * {
+    border: 2px solid #999;
+    padding: 2em;
+    border-radius: 0.3em;
+}
+
+.sideMain > main {
+    flex-grow: 3;
+}
+
+.sideMain > aside {
+    flex-grow: 1;
+}

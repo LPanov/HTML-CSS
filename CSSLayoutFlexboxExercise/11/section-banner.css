@@ -1,0 +1,71 @@
+.banner {
+    background-color: white;
+    max-width: 120ch;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    display: flex;
+    padding: 1.5em;
+    gap: 2em;
+    align-items: center;
+}
+
+.picture {
+    content: '';
+    padding: 3em;
+    background-color: #ddd;
+    width: 90ch;
+    height: 25ch;
+    border-radius: 0.3em;
+    border: 1px solid #999;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em
+}
+
+.label p:first-of-type {
+    color: #666;
+    font: 14px/0.5 Verdana, sans-serif;
+}
+
+.label p:last-of-type {
+    font-size: 2em;
+}
+
+.text > p {
+    color: #888;
+}
+
+.buttons {
+    display: flex;
+    gap: 1em;
+}
+
+button {
+    padding: 0.7em 1.2em;
+    border: none;
+    border-radius: 0.3em;
+}
+
+button:first-of-type {
+    background-color: purple;
+    color: white;
+}
+
+button:first-of-type:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+button:last-of-type:hover {
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    transition: ease-in;
+    transition-duration: 0.3s;
+}

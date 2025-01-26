@@ -1,0 +1,70 @@
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    border-radius: 1em;
+    border: 2px solid #999;
+    padding: 2em;
+    width: 135ch;
+    margin: 0 auto;
+    box-shadow: 0 0.3em 0 0 rgb(0, 0, 0, 0.2);
+    justify-content: space-between;
+    align-items: space-between;
+    gap: 1em;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-between;
+    gap:1em;
+}
+
+button {
+    border: 1px solid #aaa;
+    padding: 1em 2em;
+    box-shadow: 0 0.3em 0 0 rgb(0, 0, 0, 0.1);
+    border-radius: 0.3em;
+    background-color: #eee;
+}
+
+.rows:nth-child(1) > button {
+    padding: 0.7em 1.7em;
+}
+
+.rows:nth-child(5) > button:last-of-type {
+    flex-grow: 1;
+}
+.rows:last-child > .space {
+    flex-grow: 1;
+}
+
+.rows:last-child > * {
+    min-width: 15ch;
+}
+
+.rows:nth-child(3) > button:last-of-type {
+    position: relative;
+    border-bottom-right-radius: 0;
+}
+
+.rows:nth-child(3) > button:last-of-type::after {
+    content: ' ';
+    padding: 2.2em 2.7em;
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    right: -1%;
+    border: 1px solid #aaa;
+    border-top: none;
+    box-shadow: 0 0.3em 0 0 rgb(0, 0, 0, 0.1);
+    border-radius: 0 0 0.3em 0.3em;
+    background-color: #eee;
+    
+}
+.rows:nth-child(4)  {
+   max-width: 92%;
+}
+
+button:not(.special) {
+    background-color: white;
+}
