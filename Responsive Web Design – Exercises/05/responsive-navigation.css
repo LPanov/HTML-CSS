@@ -1,0 +1,140 @@
+nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+
+}
+
+nav .mobile-buttons {
+    display: none;
+}
+
+nav .buttons ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+}
+
+nav .buttons ul li,
+nav .buttons ul li a {
+    display: block;
+}
+
+nav .buttons ul li {
+    position: relative;
+}
+
+nav .buttons ul li a {
+    padding:1em 1.4em;
+    background: #ddd;
+    text-decoration: none;
+    color: #000;
+    border-radius: 0.3em;
+}
+
+nav .buttons ul ul {
+    display: none;
+}
+
+.buttons ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    background-color: #aaa;
+    padding: 0.5em;
+
+}
+
+nav .buttons ul li:hover > a,
+nav .buttons ul li a:hover {
+    color: white;
+    background: black;
+}
+
+.buttons ul ul li:hover > ul {
+    top: 0;
+    left: 100%;
+}
+
+@media (max-width : 800px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    
+    nav .buttons {
+        display: none
+    }
+
+    nav .mobile-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .mobile-buttons ul li,
+    nav .mobile-buttons ul li a {
+        display: block;
+        margin-bottom: 1em;
+    }
+
+    nav .mobile-buttons ul li {
+        position: relative;
+    }
+
+    nav .mobile-buttons ul li a {
+        padding:1em 1.4em;
+        background: #ddd;
+        text-decoration: none;
+        color: #000;
+        border-radius: 0.3em;
+        border: 1px solid #aaa;
+        border-collapse: collapse;
+    }
+
+    nav .mobile-buttons ul ul {
+        display: none;
+    }
+
+    .mobile-buttons ul li:hover > ul {
+        display: contents;
+        padding: 0.5em;
+
+    }
+
+    .mobile-buttons ul li:hover ul li:hover > ul {
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+        background-color: #aaa;
+
+    }
+
+    .mobile-buttons ul li:hover ul li:hover ul li:hover ul li:hover > ul {
+        display: contents;
+       
+    }
+
+    nav .mobile-buttons ul li:hover > a,
+    nav .mobile-buttons ul li a:hover {
+        color: white;
+        background: black;
+    }
+
+    .mobile-buttons ul ul li:hover > ul {
+        top: 0;
+        left: 100%;
+    }   
+
+}

@@ -1,0 +1,40 @@
+.container {
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+header, main, aside, footer {
+    padding: 2em;
+    border: 1px solid #888;
+    border-radius: 0.3em;
+}
+
+main {
+    margin-bottom: 1em;
+}
+
+@media (min-width: 800px) {
+    .content {
+        display: flex;
+        gap: 1em;
+    }
+
+    .content main {
+        flex: 1 1 400px;
+    }
+
+    .content aside {
+        flex: 1 1 100px;
+    }
+
+    main {
+        margin-bottom: 0em;
+    }
+    
+}
+

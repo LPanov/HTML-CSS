@@ -1,0 +1,54 @@
+.fancy-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.fancy-list > li {
+    background-color: white;
+    display:block;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    padding: 2em;
+    max-width: 350px;
+    position: relative;
+}
+
+.fancy-list li::after {
+    font-size: 1.2em;
+    content: '01';
+    display: block;
+    padding: 0.7em 1.5em;
+    position: absolute;
+    background-color: orange;
+    color: white;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    right: 0%;
+    top: 0%;
+    font-weight: bold;
+}
+
+.fancy-list > li:nth-child(2)::after {
+    content: '02';
+}
+
+.fancy-list > li:nth-child(3)::after {
+    content: '03';
+}
+
+.fancy-list > li:nth-child(4)::after {
+    content: '04';
+}
+
+.fancy-list > li:nth-child(5)::after {
+    content: '05';
+}
+
+
+
+
+

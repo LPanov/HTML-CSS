@@ -1,0 +1,82 @@
+table {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    padding: 1em;
+    text-align: start;
+}
+
+thead {
+    background-color: #ddd;
+}
+
+tbody tr {
+    border-top: 1px solid #999;
+}
+
+.table1 thead > tr:first-child th {
+    background-color: white;
+    border-radius: 0.3em;
+}
+
+.table1 thead > tr:last-child {
+    border-top: 1px solid #999;
+}
+
+.table2 thead tr th{
+    border-top-right-radius: 0.3em;
+    border-top-left-radius: 0.3em;
+}
+
+@media (max-width: 800px) {
+    table,
+    table tbody,
+    table tbody tr,
+    table tbody tr td {
+        display: block;
+        box-shadow: none;
+    }
+
+    table {
+        background-color: #eee;
+    }
+
+   
+
+    table thead {
+        display: none;
+    }
+
+    table tbody tr{
+        border: 1px solid #ccc;
+        background-color: #fff;
+        padding: 1em 1.5em;
+    }
+
+    table tbody tr + tr {
+        margin-top: 2em;
+    }
+
+    table tbody tr td {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px dashed #ddd;
+    }
+
+    table td::before {
+        display: block;
+        content: attr(data-title);
+        padding-right: 1em;
+        font-weight: bold;
+    }
+
+}
+
+

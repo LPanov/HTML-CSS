@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+    font-family: Lato, sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #ddd;
+    padding: 0.5em;
+    max-width: 500px;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    position: relative;
+    min-height: 75vh;
+}
+
+.media {
+    position: relative;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.media .media-pic{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+    border-radius: 0.3em;
+}
+
+.media .name {
+    position: absolute;
+    bottom: 5%;
+    right:-2.5%;
+    display: flex;
+    align-items: center;
+}
+
+.media .name .avatar {
+    display: block;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    z-index: 5;
+    width: 9ch;
+}
+
+.media .name h6 {
+    display: block;
+    padding: 0.5em;
+    background-color: white;
+    border-radius: 0.3em;
+    position: absolute;
+    right:90%;
+    min-width: 23ch;
+    z-index: 4;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+
+}
+
+.course {
+    background-color: white;
+    position: absolute;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    z-index: 3;
+    top: 27dvh;
+    left: 2.3%;
+    width: 95%;
+}
+
+.media .course p {
+    font-size: 0.7em;
+    padding-top: 0.5em;
+}
+
+.groups {
+    position: absolute;
+    top: 55%;
+    width: 97%;
+    justify-self: center;
+    padding: 1em;
+    padding-top: 0;
+}
+
+.groups .text-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.groups .text-top p {
+    padding-bottom: 0.5em;
+}
+
+.groups .text-top p:first-of-type {
+    font-weight: 600;
+    font-size: 1.2em;
+ }
+
+ .groups .text-top p:last-of-type {
+    font-weight: 700;
+    color: lightseagreen;
+ }
+
+ table {
+    width: 100%;
+    background-color: #eee;
+    margin-bottom: 1em;
+    border-radius: 0.3em;
+    padding: 0.5em;
+    border: 1px solid #aaa;
+ }
+
+ table thead {
+    text-align: left;
+ }
+
+ table tbody tr > td:last-child {
+    font-weight: 800;
+ }
+
+ table tbody tr > td {
+    opacity: 0.8;
+ }
+
+ .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 2em;
+    background-color: white;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    max-height: 7ch;
+    color: lightseagreen;
+    font-size: 1.2em;
+    font-weight: 600;
+    position: relative;
+ }
+
+ .price p {
+    display: block;
+    padding: 0 auto;
+    position: absolute;
+ }
+
+ .price > p:first-child {
+    font-size: 1.5em;
+    font-weight: 1000;
+    top: 15%;
+    right: 68%;
+ }
+
+ .price > p:nth-child(2) {
+    left: 45%;
+    top: 27%;
+ }
+ 
+ .price > p:nth-child(3) {
+    left: 80%;
+    top: 27%;
+ } 
+
+ @media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+ }
