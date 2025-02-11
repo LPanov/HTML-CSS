@@ -1,0 +1,60 @@
+.container {
+    background: white;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    width: 80%;
+    /* max-width: 25em; */
+}
+
+form button {
+    display: block;
+    padding: 0.7em 1em;
+    background-color: orange;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+
+input[type="email"],
+input[type="password"]  {
+    padding: 0.7em 1em;
+    display: block;
+    border: none;
+    border-radius: 0.2em;
+    outline: none;
+    background-color: #ddd;
+
+    &:focus {
+        border-color: orange;
+    }
+
+    &:user-invalid {
+        border-color: #c00;
+    }
+
+}
+
+form {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+form > input[type="email"],
+button {
+    flex-basis: 5ch;
+}
+
+form > input[type="email"],
+form > input[type="password"],
+button {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+

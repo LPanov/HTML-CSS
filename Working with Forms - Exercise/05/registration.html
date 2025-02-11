@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../styles/_styles.css">
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        
+        <h3>Registration</h3>
+        <fieldset>
+            <legend>Login information</legend> 
+            <form class="login" action="#" method="post">
+                <div class="field">
+                        
+                        <input type="email" id="login-email" name="login-email" required>
+                        <span>example:john@doe</span>
+                        <label for="login-email">Email</label>
+                </div>
+
+                <div class="field">
+                    
+                    <input type="password" name="login-password" id="login-password" required>
+                    <span>minimum 6 characters, letters and numbers, at least 1 special character</span>
+                    <label for="login-password" >Password</label>
+                </div>
+
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Additional information</legend> 
+            <form class="additional" action="#">
+                <div class="field">
+                    <input type="date" id="register-date" name="register-date" placeholder="dd.mm.yyyy" required>
+                    <span>14.05.1992 г.</span>
+                    <label for="register-date">Date of birth</label>
+            </div>
+            </form>
+            
+        </fieldset>
+
+        <button class="login">
+            Login
+        </button>
+        
+        
+    </div>
+</body>
+</html>

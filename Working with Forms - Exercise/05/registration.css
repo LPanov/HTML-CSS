@@ -1,0 +1,150 @@
+.container {
+    background: white;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 25em;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+.container h3 {
+    display: inline-block;
+    /* border-bottom: 2px solid #999; */
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+
+}
+
+.field label,
+.field input {
+    font-weight: bold;
+    display: flex;
+}
+
+.container button {
+    display: block;
+    width: 100%;
+    padding: 1em 0.3em;
+    background-color: orange;
+    border: none;
+    border-radius: 0.3em;
+    margin-top: 1em;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+
+input[type="email"],
+input[type="password"],
+input[type="date"]  {
+    width: 100%;
+    /* margin-bottom: 1em; */
+    padding: 0.7em 0;
+    display: block;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0.2em;
+    outline: none;
+
+    &:focus
+     {
+        border-color: orange;
+    }
+
+    &:user-invalid {
+        border-color: #c00;
+    }
+
+    &:valid {
+    border-color: green;
+}
+}
+
+.field label {
+    display: block;
+    margin-bottom: 0.2em;
+    order: -1;
+    position: absolute;
+    bottom: 50%;
+    left: 0%;
+    transition: all ease-in 0.2s;
+}
+
+.field label:last-of-type {
+    bottom: 58%;
+}
+
+/* .field input:required ~ label::after {
+    content: '*';
+    color: red;
+    padding-left: 0.1em;
+} */
+
+.login .field input:focus ~ label,
+.login .field input:focus ~ i  {
+    color: orange;
+    translate: 0 -1.7em;
+}
+
+.login .field input:user-invalid ~ label,
+.login .field input:user-invalid ~ i {
+    color: #c00;
+    translate: 0 -1.7em;
+}
+
+.login .field input:valid ~ label,
+.login .field input:valid ~ i  {
+    color: green;
+    translate: 0 -1.7em;
+}
+
+.field {
+    position: relative;
+}
+
+.field span {
+    display: block;
+    font-size: 0.7em;
+    opacity: 0.7;
+}
+
+.additional .field input,
+.additional .field label  {
+    display: block;
+    margin-top: 2em;
+}
+
+.additional .field label {
+    bottom: 70%;
+}
+
+fieldset {
+    padding: 1.3em;
+    margin-bottom: 2em;
+}
+
+fieldset legend {
+    font-weight: bold;
+    padding: 0 0.5em;
+}
+
+input:user-invalid + span::after {
+    content: " ✖";
+  }
+  
+input:valid + span::after {
+    content: " ✓";
+  }
+
+/* input[type="date"] {
+    padding-bottom: 0;
+} */
