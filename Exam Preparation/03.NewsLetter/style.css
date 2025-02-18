@@ -1,0 +1,41 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #C1BBBB;
+    min-height: 100dvh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center */
+}
+
+html {
+    font-size: clamp(12px, 12px + 0.25vw, 18px);
+    font-family: 'Open Sans', sans-serif;
+}
+
+body, input, textarea,p, h3, span {
+    font: inherit;
+}
+
+h1 { font-size: 2.8em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }

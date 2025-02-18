@@ -1,0 +1,59 @@
+@media (width <= 600px ) {
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .site-header > i, h1 {
+        display: block;
+        bottom: 0%;
+    }
+
+    .site-header > i {
+        left: 0;
+    }
+
+    .site-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+        order: 10;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    #check:checked ~ ul{
+        display: contents;
+        flex-direction: column;
+        position: absolute;
+        background-color: #38cccc;
+        right: 2%;
+        top:95%;
+        padding: 0.2em 1em;
+        border-radius: 0.3em;
+        
+    }
+
+    .about-header {
+        bottom: 0;
+    }
+}

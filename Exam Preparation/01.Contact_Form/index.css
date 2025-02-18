@@ -1,0 +1,101 @@
+.containter {
+    display: flex;
+    gap: 3em;
+}
+
+aside {
+    width: 350px;
+}
+
+aside .icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.icons p {
+    padding: 0.7em 1.2em;
+    border: 1px solid #aaa;
+    border-radius: 0.2em;
+    font-size: 1.3em;
+}
+
+h4{
+    opacity: 0.7;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0 10em;
+}
+
+.icons i {
+    opacity: 0.7;
+}
+main {
+    width: 600px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.field input,
+.field label {
+    display: block;
+}
+
+.field label {
+    order: -1;
+    color: #777;
+    /* position: absolute;
+    bottom: 80%;*/
+    padding-top: 1.5em; 
+}
+
+input[type="email"],
+input[type="name"],
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    background-color: inherit;
+    margin-bottom: 1em;
+}
+
+input[type="text"] {
+    padding: 0.2em 0;
+}
+
+.name-email {
+    display: flex;
+    gap: 1em;
+}
+
+.name-email > * {
+    flex-grow: 1;
+}
+
+button {
+    padding: 1.3em 2em;
+    border-radius: 0.2em;
+    border: none;
+    background-color: #585858;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 1em;
+    font-size: 0.7em;
+}
+
+footer {
+    margin-top: 2em;
+    color: #999;
+}
+
+footer span {
+    text-decoration: underline;
+    color: #444;
+}
+
